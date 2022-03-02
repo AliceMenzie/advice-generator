@@ -1,5 +1,7 @@
 import React from "react";
 import { useQuery } from "react-query";
+import divider from './assets/images/pattern-divider-desktop.svg'
+
 
 export default function Advice() {
   async function fetchAdvice() {
@@ -7,7 +9,7 @@ export default function Advice() {
     return response.json();
   }
 
-  const { data, isError, error, isLoading } = useQuery(
+  const { data, isError, error, isLoading, refetch } = useQuery(
     "advice",
     () => fetchAdvice(),
     {
@@ -25,9 +27,13 @@ export default function Advice() {
     );
 
   return (
-    <div>
-      {data.slip.id}
-      {data.slip.advice}
+    <div className="advice-container">
+      <div className="content"><p className="identification">Advice #{data.slip.id}</p>
+      <p className="quote">"{data.slip.advice}"</p></div>
+      <div className="images">
+        <img src={divider} alt="" /> 
+      </div>
+      <button className="btn-container" onClick={refetch}></button>
     </div>
   );
 }

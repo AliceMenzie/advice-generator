@@ -2,9 +2,12 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools'
 import Advice from './Advice';
 
-import './main.scss';
+import './App.scss';
+
 
 const queryClient = new QueryClient()
+
+
 
 function App() {
 
@@ -12,9 +15,11 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* https://api.adviceslip.com/advice */}
-
+     
+<div className='container'>
 <Advice />
+</div>
+
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   );
