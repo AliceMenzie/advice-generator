@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/advicr-generator/static/css/main.f99727db.css",
+    "main.js": "/advicr-generator/static/js/main.aea4b194.js",
+    "static/js/787.028157ea.chunk.js": "/advicr-generator/static/js/787.028157ea.chunk.js",
+    "index.html": "/advicr-generator/index.html",
+    "static/media/icon-dice.svg": "/advicr-generator/static/media/icon-dice.08691e4c24c11b5ba564.svg",
+    "static/media/pattern-divider-desktop.svg": "/advicr-generator/static/media/pattern-divider-desktop.ed9685263f6b47d21c8848f7d8bdd10e.svg",
+    "main.f99727db.css.map": "/advicr-generator/static/css/main.f99727db.css.map",
+    "main.aea4b194.js.map": "/advicr-generator/static/js/main.aea4b194.js.map",
+    "787.028157ea.chunk.js.map": "/advicr-generator/static/js/787.028157ea.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f99727db.css",
+    "static/js/main.aea4b194.js"
+  ]
+}
